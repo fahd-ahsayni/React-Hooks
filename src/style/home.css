@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+    .main {
+        @apply flex flex-col justify-center items-center my-5
+    }
+    p {
+        @apply text-6xl font-bold text-white
+    }
+    .btn {
+        @apply text-4xl text-white bg-teal-500 px-5 py-2.5 text-center mt-5 rounded-md
+    }
+    .input {
+        @apply w-72 p-3 text-black rounded mt-5
+    }
+    .main-2 > .btn {
+        @apply font-bold text-2xl
+    }
+    .hooks {
+        @apply text-white bg-gray-700 p-5 my-2.5
+    }
+    .btn-inc {
+        @apply bg-red-600
+    }
+    .btn-dec {
+        @apply px-6 bg-sky-500
+    }
+    .title {
+        @apply text-center font-semibold text-2xl
+    }
+    .card {
+        @apply bg-gray-900 w-80 text-center h-40 flex items-center justify-center
+        p-10 rounded-md shadow-xl mt-5
+    }
+    .context {
+        @apply text-yellow-400
+    }
+}

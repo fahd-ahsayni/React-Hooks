@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   body {
+      @apply bg-slate-200 p-0 m-0 box-border
+    }
+    .form-content {
+      @apply  flex items-center justify-center h-screen w-screen
+    }
+
+    /* REQUIRED */
+    form {
+     @apply mb-0 space-y-6 bg-white lg:w-1/3 w-2/3 py-8 px-6 shadow-md rounded-md sm:px-10
+    }
+
+    /* LABEL STYLE */
+    .input-group > label {
+      @apply font-medium block text-gray-700 text-sm
+    }
+
+    /* INPUT STYLE */
+    .input-group > .input {
+      @apply border border-gray-300 px-3 py-2 rounded-lg shadow-sm w-full mt-2
+             focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
+    }
+
+    /* BUTTON SIGN UP STYLE */
+    .btn-signup {
+      @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md
+             shadow-sm text-base font-medium text-white bg-indigo-500 hover:bg-indigo-700
+             focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
+    }
+
+    /* REQUIRED FOR SELECT */
+    .input-group > select {
+      @apply font-medium mt-2 text-gray-600 appearance-none
+    }
+    .input-group > select > option {
+      @apply font-medium
+    }
+
+    /* CHECK BOX STYLE */
+    .agree {
+      @apply flex items-center
+    }
+    .agree > input {
+        @apply h-5 w-5 cursor-pointer rounded-sm
+       
+    }
+    .agree > label {
+      @apply ml-2.5 block text-gray-900 text-sm font-medium
+    }
+    .agree > label > a {
+      @apply text-indigo-600 hover:text-indigo-500
+    }
+    .title {
+      @apply text-center font-bold text-4xl mb-10 tracking-wide text-gray-800
+    }
+  }

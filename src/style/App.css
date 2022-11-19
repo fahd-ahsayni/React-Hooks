@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title {
+      @apply text-zinc-200 font-bold text-6xl
+    }
+  }
